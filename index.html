@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ryan Jin</title>
+        <link rel="stylesheet" href="/dist/main.css" />
+        <link href="dist/hamburgers.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css"
+        />
+        <script
+            src="https://kit.fontawesome.com/75d54640f0.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <div class="overlay hide-overlay"></div>
+        <nav class="flex flex-jc-sb">
+            <a href="#" class="font-bold" id="R-Jin">R-Jin</a>
+
+            <!-- Desktop Nav Links -->
+            <div id="nav-items" class="hide-for-mobile">
+                <ul>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+
+            <!-- Hamburger Btn -->
+            <button
+                id="hamburger"
+                class="hamburger hamburger--minus hide-for-desktop"
+                type="button"
+            >
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </nav>
+
+        <!-- Mobile Nav Links -->
+        <div class="menu flex-ai-c hide-menu">
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact Me</a>
+        </div>
+
+        <!-- Hero Section -->
+        <section id="hero-page">
+            <div id="hero">
+                <div>
+                    <h1>
+                        Hello, World!<br />I am Ryan Jin<span class="blinking"
+                            >.</span
+                        >
+                    </h1>
+
+                    <!-- Links -->
+                    <div class="social-links">
+                        <a href="#"><i class="fab icons fa-github"></i></a>
+                        <a href="#"><i class="fab icons fa-linkedin"></i></a>
+                        <a href="#"><i class="fas icons fa-at"></i></a>
+                    </div>
+
+                    <!-- Desktop Buttons -->
+                    <div class="nav-btn flex hide-for-mobile">
+                        <button id="work-btn">See My Work</button>
+                        <button id="about-btn">Contact Me</button>
+                    </div>
+                </div>
+
+                <!-- Terminal -->
+                <div id="terminal"></div>
+
+                <!-- Mobile Buttons -->
+                <div class="nav-btn flex hide-for-desktop">
+                    <button id="work-btn">See My Work</button>
+                    <button id="about-btn">Contact Me</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Page -->
+        <section id="project-page">
+            <h1 class="title">My Projects</h1>
+            <div id="cards">
+                <div class="card">
+                    <!-- <a href="taoslab.org"
+                        ><img src="./app/misc/img/Tao Jin's Lab.png" alt=""
+                    /></a>
+                    <h1>Portfolio Website</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing</p> -->
+                </div>
+
+                <div class="card">
+                    <!-- <h1>Portfolio Website</h1> -->
+                </div>
+
+                <div class="card">
+                    <!-- <h1>Portfolio Website</h1> -->
+                </div>
+            </div>
+        </section>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./app/js/particles/app.js"></script>
+    <script src="./app/js/script.js"></script>
+    <script src="./app/js/typerwriter.js"></script>
+</html>

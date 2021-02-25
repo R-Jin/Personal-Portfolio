@@ -1,0 +1,81 @@
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: $fg-color;
+    // padding for the desktop version
+    // padding: 1.5em 7.5em;
+    padding: 1em 2.9375em;
+    padding: & a {
+        // font size for desktop
+        // font-size: 1.4375rem;
+        font-size: 0.875rem;
+    }
+    & ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        & :not(:last-child) {
+            padding-right: 5.625em;
+        }
+    }
+    & li {
+        display: inline;
+    }
+
+    & .line {
+        width: 120px;
+        height: 3px;
+        background-color: $pink;
+    }
+}
+
+// mobile nav
+.hamburger {
+    outline: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.795), transparent);
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.menu {
+    position: fixed;
+    background-color: $fg-color;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1.5em;
+    border-radius: 6px;
+    padding: 0.9375em;
+    opacity: 1;
+    transition: 0.3s;
+    z-index: 1;
+    box-shadow: 5px 10px 8px rgba(49, 49, 49, 0.171);
+
+    & a {
+        padding: 0.625em;
+    }
+}
+
+.hide-menu {
+    visibility: hidden;
+    opacity: 0;
+    top: -2%;
+}
+
+.hide-overlay {
+    visibility: hidden;
+    opacity: 0;
+}
