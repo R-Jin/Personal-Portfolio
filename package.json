@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/R-Jin/Personal-Portfolio.git"
+  },
+  "author": "R-Jin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/R-Jin/Personal-Portfolio/issues"
+  },
+  "homepage": "https://github.com/R-Jin/Personal-Portfolio#readme",
+  "dependencies": {
+    "jump.js": "^1.0.2"
+  }
+}

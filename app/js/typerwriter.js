@@ -15,6 +15,6 @@ typewriter
   .deleteAll()
   .typeString('I\'m currently focusing on <strong><span style="color:#ff79c6">Web-Development</span>.</strong>')
   .pauseFor(600)
-  .typeString('<br><br>I hope to bring <strong>your <span style="color: #50fa7b">Web-Ideas</span> to life!</strong>')
+  .typeString('<br><br>I hope to bring <strong>breathtaking <span style="color: #50fa7b">Web-Experiences</span> to life!</strong>')
   .pauseFor(2000)
   .start();

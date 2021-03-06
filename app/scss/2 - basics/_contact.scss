@@ -1,0 +1,95 @@
+#contact-page {
+    padding: 3em;
+
+    .fields {
+        max-width: 50em;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    @include breakpoint-up(medium) {
+        h1 {
+            font-size: 3.125rem;
+        }
+    }
+
+    ::placeholder {
+        color: $white;
+        opacity: 1;
+    }
+
+    .field {
+        position: relative;
+        font-size: 0.875rem;
+        padding-top: 1.25em;
+        padding-bottom: 0.3125em;
+        margin-bottom: 1em;
+    }
+
+    input {
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        background-color: $fg-color;
+        padding: 0.75em;
+        border-radius: 8px;
+        width: 100%;
+        outline: none;
+        font-size: 0.875rem;
+        box-shadow: none;
+        color: $white;
+        border: 2px solid $fg-color;
+        transition: border-color 0.3s ease;
+        font-family: inherit;
+
+        &:focus {
+            border-color: $pink;
+        }
+    }
+
+    textarea {
+        appearance: none;
+        width: 100%;
+        border: 2px solid $fg-color;
+        background-color: $fg-color;
+        border-radius: 8px;
+        outline: none;
+        padding: 0.75em;
+        color: $white;
+        font-family: inherit;
+        resize: none;
+
+        &:focus {
+            border-color: $pink;
+        }
+    }
+
+    & .form-label {
+        position: absolute;
+        left: 1rem;
+        top: 2em;
+        cursor: text;
+        opacity: 0.8;
+        transition: top 0.3s ease, left 0.3s ease;
+    }
+
+    .form-input:focus ~ .form-label,
+    .form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label {
+        top: -0.2rem;
+        left: 0.2rem;
+    }
+
+    & .btn {
+        background-color: $dark-purple;
+        outline: none;
+        border: none;
+        box-shadow: none;
+        cursor: pointer;
+        max-width: 12.5em;
+    }
+}

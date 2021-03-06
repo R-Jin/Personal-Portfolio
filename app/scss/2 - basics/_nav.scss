@@ -6,7 +6,7 @@ nav {
     // padding for the desktop version
     // padding: 1.5em 7.5em;
     padding: 1em 2.9375em;
-    padding: & a {
+    & a {
         // font size for desktop
         // font-size: 1.4375rem;
         font-size: 0.875rem;
@@ -28,6 +28,10 @@ nav {
         width: 120px;
         height: 3px;
         background-color: $pink;
+    }
+
+    .link {
+        cursor: pointer;
     }
 }
 
@@ -64,8 +68,9 @@ nav {
     z-index: 1;
     box-shadow: 5px 10px 8px rgba(49, 49, 49, 0.171);
 
-    & a {
+    & span {
         padding: 0.625em;
+        cursor: pointer;
     }
 }
 
