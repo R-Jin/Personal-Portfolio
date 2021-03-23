@@ -19,6 +19,7 @@
   "homepage": "https://github.com/R-Jin/Personal-Portfolio#readme",
   "dependencies": {
     "jump.js": "^1.0.2",
+    "particles.js": "^2.0.0",
     "sass": "^1.32.8"
   },
   "devDependencies": {
